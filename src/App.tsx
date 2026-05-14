@@ -3,15 +3,19 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 
 import { HomePage } from './pages/HomePage'
 import { HarfaPage } from './pages/HarfaPage'
+import { HennaPage } from './pages/HennaPage'
 import { KeramikaPage } from './pages/KeramikaPage'
 import { KontaktPage } from './pages/KontaktPage'
-import { OstatniPage } from './pages/OstatniPage'
+import { MalovaniNaSklePage } from './pages/MalovaniNaSklePage'
+import { MalovaniSvicekPage } from './pages/MalovaniSvicekPage'
 
 const navigationItems = [
   { to: '/', label: 'Domů', end: true },
   { to: '/harfa', label: 'Harfa', end: false },
   { to: '/keramika', label: 'Keramika', end: false },
-  { to: '/ostatni', label: 'Ostatní', end: false },
+  { to: '/henna', label: 'Henna', end: false },
+  { to: '/malovani-na-sklo', label: 'Malování na sklo', end: false },
+  { to: '/malovani-svicek', label: 'Malování svíček', end: false },
   { to: '/kontakt', label: 'Kontakt', end: false },
 ] as const
 
@@ -103,7 +107,9 @@ export function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/harfa" element={<HarfaPage />} />
         <Route path="/keramika" element={<KeramikaPage />} />
-        <Route path="/ostatni" element={<OstatniPage />} />
+        <Route path="/henna" element={<HennaPage />} />
+        <Route path="/malovani-na-sklo" element={<MalovaniNaSklePage />} />
+        <Route path="/malovani-svicek" element={<MalovaniSvicekPage />} />
         <Route path="/kontakt" element={<KontaktPage />} />
       </Routes>
     </div>

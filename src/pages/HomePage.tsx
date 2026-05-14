@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 
 import bgPoster from '../assets/background.jpg'
+import candleImg from '../assets/candle_homepage.jpg'
 import ceramicsImg from '../assets/ceramics.jpg'
+import glassImg from '../assets/glass_homepage.jpg'
 import harpImg from '../assets/harp.png'
 import hennaImg from '../assets/henna.jpg'
 
@@ -80,14 +82,27 @@ export function HomePage() {
             alt="Keramika"
             className="h-44 lg:h-auto"
           />
-          {/* Henna / other — bottom-right */}
-          <Tile
-            title="Ostatní"
-            to="/ostatni"
-            img={hennaImg}
-            alt="Dalsi sluzby"
-            className="h-44 lg:h-auto"
-          />
+          {/* Other services — bottom-right, split into 3 mini columns */}
+          <div className="grid grid-cols-3 gap-2 h-44 lg:h-auto">
+            <Tile
+              title="Henna"
+              to="/henna"
+              img={hennaImg}
+              alt="Henna"
+            />
+            <Tile
+              title="Malování na sklo"
+              to="/malovani-na-sklo"
+              img={glassImg}
+              alt="Malování na sklo"
+            />
+            <Tile
+              title="Malování svíček"
+              to="/malovani-svicek"
+              img={candleImg}
+              alt="Malování svíček"
+            />
+          </div>
         </div>
       </div>
     </section>
