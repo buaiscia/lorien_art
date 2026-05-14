@@ -1,4 +1,3 @@
-import { ContactForm } from '../components/ContactForm'
 import { PageShell } from './PageShell'
 import ruzneImg from '../assets/madera_ruzne.jpg'
 
@@ -39,7 +38,6 @@ export function RuznePage() {
         </div>
       </div>
 
-      <ContactForm formName="ruzne-kontakt" />
     </PageShell>
   )
 }

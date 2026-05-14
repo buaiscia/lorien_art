@@ -1,4 +1,3 @@
-import { ContactForm } from '../components/ContactForm'
 import { PageShell } from './PageShell'
 import hennaImg from '../assets/henna.jpg'
 
@@ -40,7 +39,6 @@ export function HennaPage() {
         </div>
       </div>
 
-      <ContactForm formName="henna-kontakt" />
     </PageShell>
   )
 }

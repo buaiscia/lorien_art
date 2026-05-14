@@ -1,4 +1,3 @@
-import { ContactForm } from '../components/ContactForm'
 import { PageShell } from './PageShell'
 import harpImg from '../assets/harp.png'
 
@@ -43,7 +42,6 @@ export function HarfaPage() {
         </div>
       </div>
 
-      <ContactForm formName="harfa-kontakt" />
     </PageShell>
   )
 }

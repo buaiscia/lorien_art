@@ -1,8 +1,53 @@
+import { useState } from 'react'
+
 type ContactFormProps = {
   formName: string
 }
 
 export function ContactForm({ formName }: ContactFormProps) {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('sending')
+    const form = e.currentTarget
+    const body = new URLSearchParams()
+    new FormData(form).forEach((value, key) => body.append(key, value.toString()))
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      })
+      if (res.ok) {
+        setStatus('sent')
+        form.reset()
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
+  }
+
+  if (status === 'sent') {
+    return (
+      <section className="border-t border-stone-200 pt-12">
+        <div className="rounded-2xl bg-stone-50 px-8 py-12 text-center">
+          <p className="font-serif text-2xl text-stone-900">Zpráva odeslána!</p>
+          <p className="mt-2 text-sm text-stone-500">Ozvu se co nejdříve.</p>
+          <button
+            type="button"
+            onClick={() => setStatus('idle')}
+            className="mt-6 rounded-full bg-stone-900 px-6 py-2.5 text-sm font-medium text-white! transition hover:bg-stone-700"
+          >
+            Odeslat další zprávu
+          </button>
+        </div>
+      </section>
+    )
+  }
+
   return (
     <section className="border-t border-stone-200 pt-12">
       <h3 className="font-serif text-3xl text-stone-900">Kontaktujte mě</h3>
@@ -14,6 +59,7 @@ export function ContactForm({ formName }: ContactFormProps) {
         name={formName}
         method="POST"
         data-netlify="true"
+        onSubmit={handleSubmit}
         className="mt-8 grid gap-5 sm:grid-cols-2"
       >
         <input type="hidden" name="form-name" value={formName} />
@@ -65,10 +111,14 @@ export function ContactForm({ formName }: ContactFormProps) {
         <div className="sm:col-span-2">
           <button
             type="submit"
-            className="rounded-full bg-stone-900 px-8 py-3 text-sm font-medium text-white transition hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2"
+            disabled={status === 'sending'}
+            className="rounded-full bg-stone-900 px-8 py-3 text-sm font-medium text-white! transition hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 disabled:opacity-60"
           >
-            Odeslat zprávu
+            {status === 'sending' ? 'Odesílám…' : 'Odeslat zprávu'}
           </button>
+          {status === 'error' && (
+            <p className="mt-3 text-sm text-red-600">Něco se pokazilo. Zkuste to znovu.</p>
+          )}
         </div>
       </form>
     </section>

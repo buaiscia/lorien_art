@@ -9,5 +9,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Static form stubs for Netlify's build-time crawler.
+         These are never shown to users — they exist only so Netlify
+         registers the forms before the JS bundle runs. -->
+    <form name="kontakt" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="kontakt" />
+      <input name="name" /><input name="email" /><textarea
+        name="message"
+      ></textarea>
+    </form>
   </body>
 </html>
