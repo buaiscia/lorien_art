@@ -2,12 +2,12 @@ import { ContactForm } from '../components/ContactForm'
 import { PageShell } from './PageShell'
 import glassImg from '../assets/glass_homepage.jpg'
 
-export function MalovaniNaSklePage() {
+export function MalovaniPage() {
   return (
     <PageShell
-      eyebrow="Malování na sklo"
-      title="Malované skleněné předměty"
-      description="Ručně malované vázy, sklenice a další skleněné předměty s ornamentálními vzory. Každý kus je originál."
+      eyebrow="Malování"
+      title="Ručně malované předměty"
+      description="Ručně malované skleněné předměty a svíčky s ornamentálními vzory. Každý kus je originál — ideální jako dárek i dekorace."
     >
       <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-start lg:grid-cols-[480px_1fr]">
         <img
@@ -27,6 +27,8 @@ export function MalovaniNaSklePage() {
             <ul className="mt-3 list-disc pl-5 leading-8 text-stone-600">
               <li>Vázy a dekorativní sklenice</li>
               <li>Skleničky na zakázku</li>
+              <li>Válcové svíčky s mandala vzory</li>
+              <li>Svíčky a sklo na zakázku</li>
               <li>Dárkové sety</li>
             </ul>
           </div>
@@ -39,7 +41,7 @@ export function MalovaniNaSklePage() {
         </div>
       </div>
 
-      <ContactForm formName="malovani-na-sklo-kontakt" />
+      <ContactForm formName="malovani-kontakt" />
     </PageShell>
   )
 }

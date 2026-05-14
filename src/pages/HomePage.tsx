@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import bgPoster from '../assets/background.jpg'
-import candleImg from '../assets/candle_homepage.jpg'
+import ruzneImg from '../assets/madera_ruzne.jpg'
 import ceramicsImg from '../assets/ceramics.jpg'
 import glassImg from '../assets/glass_homepage.jpg'
 import harpImg from '../assets/harp.png'
@@ -91,16 +91,16 @@ export function HomePage() {
               alt="Henna"
             />
             <Tile
-              title="Malování na sklo"
-              to="/malovani-na-sklo"
+              title="Malování"
+              to="/malovani"
               img={glassImg}
-              alt="Malování na sklo"
+              alt="Malování"
             />
             <Tile
-              title="Malování svíček"
-              to="/malovani-svicek"
-              img={candleImg}
-              alt="Malování svíček"
+              title="Různé"
+              to="/ruzne"
+              img={ruzneImg}
+              alt="Různé"
             />
           </div>
         </div>
