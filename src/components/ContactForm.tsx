@@ -32,7 +32,7 @@ export function ContactForm({ formName }: ContactFormProps) {
 
   if (status === 'sent') {
     return (
-      <section className="border-t border-stone-200 pt-12">
+      <section>
         <div className="rounded-2xl bg-stone-50 px-8 py-12 text-center">
           <p className="font-serif text-2xl text-stone-900">Zpráva odeslána!</p>
           <p className="mt-2 text-sm text-stone-500">Ozvu se co nejdříve.</p>
@@ -49,7 +49,7 @@ export function ContactForm({ formName }: ContactFormProps) {
   }
 
   return (
-    <section className="border-t border-stone-200 pt-12">
+    <section>
       <h3 className="font-serif text-3xl text-stone-900">Kontaktujte mě</h3>
       <p className="mt-2 text-sm text-stone-500">
         Napište mi a ozvu se co nejdříve.

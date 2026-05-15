@@ -4,6 +4,7 @@ type PageShellProps = {
   eyebrow: string
   title: string
   description: string
+  wideDescription?: boolean
   children?: ReactNode
 }
 
@@ -11,6 +12,7 @@ export function PageShell({
   eyebrow,
   title,
   description,
+  wideDescription = false,
   children,
 }: PageShellProps) {
   return (
@@ -23,7 +25,7 @@ export function PageShell({
           <h2 className="mt-3 font-serif text-5xl text-stone-900 md:text-6xl">
             {title}
           </h2>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-stone-600">
+          <p className={`mt-5 text-base leading-7 text-stone-600${wideDescription ? '' : ' max-w-2xl'}`}>
             {description}
           </p>
         </div>

@@ -7,7 +7,7 @@ export function KontaktPage() {
     <PageShell
       eyebrow="Kontakt"
       title="Napište mi"
-      description="Máte zájem o spolupráci nebo se chcete jen zeptat? Napište mi a ozvu se co nejdříve."
+      description="Máte zájem o spolupráci nebo se chcete jen na něco zeptat? Napište mi a ozvu se co nejdříve."
     >
       <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-start lg:grid-cols-[420px_1fr]">
         <img

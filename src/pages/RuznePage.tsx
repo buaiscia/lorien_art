@@ -1,22 +1,21 @@
 import { useCallback, useEffect, useState } from 'react'
 import { PageShell } from './PageShell'
 
-import img1 from '../assets/painting/malovani_1.jpg'
-import img2 from '../assets/painting/malovani_2.jpg'
-import img3 from '../assets/painting/malovani_3.jpg'
-import img4 from '../assets/painting/malovani_4.jpg'
-import img5 from '../assets/painting/malovani_5.jpg'
-import img6 from '../assets/painting/malovani_6.jpg'
-import img7 from '../assets/painting/malovani_7.jpg'
-import img8 from '../assets/painting/malovani_8.jpg'
-import img9 from '../assets/painting/malovani_9.jpg'
-import img10 from '../assets/painting/malovani_10.jpg'
-import img11 from '../assets/painting/malovani_11.jpg'
-import img12 from '../assets/painting/malovani_12.jpg'
+import img1 from '../assets/ruzne/ruzne_1.jpg'
+import img2 from '../assets/ruzne/ruzne_2.jpg'
+import img3 from '../assets/ruzne/ruzne_3.jpg'
+import img4 from '../assets/ruzne/ruzne_4.jpg'
+import img5 from '../assets/ruzne/ruzne_5.jpg'
+import img6 from '../assets/ruzne/ruzne_6.jpg'
+import img7 from '../assets/ruzne/ruzne_7.jpg'
+import img8 from '../assets/ruzne/ruzne_8.jpg'
+import img9 from '../assets/ruzne/ruzne_9.jpg'
+import img10 from '../assets/ruzne/ruzne_10.jpg'
+import img11 from '../assets/ruzne/ruzne_11.jpg'
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]
 
-export function MalovaniPage() {
+export function RuznePage() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const close = useCallback(() => setActiveIndex(null), [])
@@ -47,9 +46,9 @@ export function MalovaniPage() {
 
   return (
     <PageShell
-      eyebrow="Malování"
-      title="Ručně malované sklo, svíčky a další předměty."
-      description="Ozdobit se dá (skoro) všechno. Skleněné dózy na potraviny nebo na koření, svíčky...fantazii se meze nekladou. Věnuji se i pyrografice. V budoucnu plánuji nabízet i tyto zkrášlené věci na prodej (i na zakázku). Vše je ale stále v procesu (stejně jako tyto stránky), tak zatím alespoň sdílím pár obrázků pro představu a pro radost."
+      eyebrow="Různé"
+      title="DALŠÍ TVORBA"
+      description="Miluji přírodu, pokorně v ní hledám inspiraci pro hudbu i pro další tvoření. Tady je pár ukázek dřevořezby. Dlátka sice už pár let odpočívají ve skříni, ale trpělivě čekají, až zase přijde jejich čas."
       wideDescription
     >
       {/* Masonry grid */}
@@ -64,7 +63,7 @@ export function MalovaniPage() {
           >
             <img
               src={src}
-              alt={`Malování ${i + 1}`}
+              alt={`Různé ${i + 1}`}
               className="w-full object-cover transition-transform duration-500 hover:scale-105"
             />
           </button>
@@ -86,7 +85,7 @@ export function MalovaniPage() {
           >
             <img
               src={images[activeIndex]}
-              alt={`Malování ${activeIndex + 1}`}
+              alt={`Různé ${activeIndex + 1}`}
               className="max-h-[82vh] max-w-full rounded-xl object-contain shadow-2xl"
             />
             <p className="mt-3 text-sm text-white/50">

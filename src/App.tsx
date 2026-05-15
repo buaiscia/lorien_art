@@ -8,7 +8,7 @@ import { HennaPage } from './pages/HennaPage'
 import { KeramikaPage } from './pages/KeramikaPage'
 import { KontaktPage } from './pages/KontaktPage'
 import { MalovaniPage } from './pages/MalovaniNaSklePage'
-import { RuznePage } from './pages/MalovaniSvicekPage'
+import { RuznePage } from './pages/RuznePage'
 
 const navigationItems = [
   { to: '/', label: 'Domů', end: true },
