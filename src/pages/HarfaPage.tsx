@@ -1,5 +1,6 @@
 import { PageShell } from './PageShell'
-import harpImg from '../assets/harp.png'
+import harp1Img from '../assets/harp/harp_1.jpg'
+import harp2Img from '../assets/harp/harp_2.jpg'
 
 export function HarfaPage() {
   return (
@@ -10,11 +11,18 @@ export function HarfaPage() {
     >
       {/* Image + description */}
       <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-start lg:grid-cols-[480px_1fr]">
-        <img
-          src={harpImg}
-          alt="Harpistka při vystoupení"
-          className="w-full rounded-2xl object-cover shadow-md"
-        />
+        <div className="flex flex-col gap-4">
+          <img
+            src={harp1Img}
+            alt="Harpistka při vystoupení"
+            className="w-full rounded-2xl object-cover shadow-md"
+          />
+          <img
+            src={harp2Img}
+            alt="Harpistka při vystoupení"
+            className="w-full rounded-2xl object-cover shadow-md"
+          />
+        </div>
         <div className="flex flex-col gap-6 text-stone-700">
           <div>
             <h3 className="font-serif text-2xl text-stone-900">O mně</h3>

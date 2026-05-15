@@ -56,14 +56,14 @@ export function HomePage() {
       {/* Tiles container
           Mobile:  normal flow, scrollable via the page, centred with py
           Desktop: absolute centred over the video */}
-      <div className="relative py-8 px-4 flex justify-center lg:absolute lg:inset-0 lg:flex lg:items-center lg:justify-center lg:p-12">
+      <div className="relative py-8 px-4 flex justify-center lg:absolute lg:inset-0 lg:flex lg:items-center lg:justify-center lg:p-8">
         <div
           className="
             w-full max-w-5xl rounded-2xl
             bg-white/10 backdrop-blur-sm ring-1 ring-white/20
             p-2 gap-2
             grid grid-cols-1
-            lg:grid-cols-[420px_1fr] lg:grid-rows-[1fr_1fr] lg:h-[600px]
+            lg:grid-cols-[420px_1fr] lg:grid-rows-[1fr_1fr] lg:h-[calc(100svh-90px-4rem)]
           "
         >
           {/* Harp — left column, spans both rows on desktop */}

@@ -15,8 +15,8 @@ export function PageShell({
 }: PageShellProps) {
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-12">
-      <section className="flex flex-col gap-16">
-        <div className="border-b border-stone-200 pb-10">
+      <section className="flex flex-col gap-8">
+        <div className="border-b border-stone-200 pb-6">
           <p className="text-sm uppercase tracking-[0.3em] text-stone-400">
             {eyebrow}
           </p>

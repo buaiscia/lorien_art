@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { NavLink, Route, Routes } from 'react-router-dom'
+import { Link, NavLink, Route, Routes } from 'react-router-dom'
+import logoImg from './assets/logo.png'
 
 import { HomePage } from './pages/HomePage'
 import { HarfaPage } from './pages/HarfaPage'
@@ -56,10 +57,16 @@ export function App() {
       >
         <div className="mx-auto flex h-full max-w-6xl items-center justify-between px-6 md:px-8">
           {/* Logo */}
-          <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-stone-500">lorienart</p>
-            <h1 className="font-serif text-2xl text-stone-900">Zakladni struktura webu</h1>
-          </div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src={logoImg}
+              alt="Lorien Art logo"
+              className="h-12 w-auto object-contain"
+            />
+            <span className="text-4xl text-stone-900 group-hover:text-stone-600 transition-colors" style={{ fontFamily: '"Amarante", serif' }}>
+              Lorien Art
+            </span>
+          </Link>
 
           {/* Desktop nav */}
           <nav aria-label="Hlavni navigace" className="hidden md:block">
