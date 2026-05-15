@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { PageShell } from './PageShell'
 
 import img1 from '../assets/henna/henna_1.jpg'
@@ -20,6 +21,7 @@ import img15 from '../assets/henna/henna_15.jpg'
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15]
 
 export function HennaPage() {
+  usePageMeta('Henna | Lorien Art', 'Malování hennou – přírodní motivy, těhotenská bříška, teambuilding a oslavy.')
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const close = useCallback(() => setActiveIndex(null), [])

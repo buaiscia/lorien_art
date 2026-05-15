@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { PageShell } from './PageShell'
 
 import img1 from '../assets/ruzne/ruzne_1.jpg'
@@ -16,6 +17,7 @@ import img11 from '../assets/ruzne/ruzne_11.jpg'
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]
 
 export function RuznePage() {
+  usePageMeta('Různé | Lorien Art', 'Další tvorba – dřevořezba a ostatní umělecké práce.')
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const close = useCallback(() => setActiveIndex(null), [])

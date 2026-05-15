@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { PageShell } from './PageShell'
 
 import img1 from '../assets/ceramics/keramika_1.jpg'
@@ -20,6 +21,7 @@ const images = [
 ]
 
 export function KeramikaPage() {
+  usePageMeta('Keramika | Lorien Art', 'Ručně vyráběná autorská keramika. Galerie prací.')
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const close = useCallback(() => setActiveIndex(null), [])

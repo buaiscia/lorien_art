@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+import { usePageMeta } from '../hooks/usePageMeta'
 import bgPoster from '../assets/background.jpg'
 import ruzneImg from '../assets/madera_ruzne.jpg'
 import ceramicsImg from '../assets/ceramics.jpg'
@@ -35,6 +36,10 @@ function Tile({ title, to, img, alt, className = '' }: TileProps) {
 }
 
 export function HomePage() {
+  usePageMeta(
+    'Lorien Art – Harfa, Keramika, Henna & Malování',
+    'Portfolio a služby Lorien Art – harfa pro vaše akce, keramika, malování hennou, malování na sklo a dřevořezba.',
+  )
   return (
     <section className="relative min-h-[calc(100svh-90px)]">
       {/* Background video */}

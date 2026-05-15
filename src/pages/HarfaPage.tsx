@@ -1,3 +1,4 @@
+import { usePageMeta } from '../hooks/usePageMeta'
 import { PageShell } from './PageShell'
 import harp1Img from '../assets/harp/harp_1.jpg'
 import harp2Img from '../assets/harp/harp_2.jpg'
@@ -63,6 +64,10 @@ const folk = [
 ]
 
 export function HarfaPage() {
+  usePageMeta(
+    'Harfa | Lorien Art',
+    'Hudba harfy pro vaše svatby, vernisáže a soukromé akce. Rozsáhlý repertoár klasiky, filmové hudby i irského folku.',
+  )
   return (
     <PageShell
       eyebrow="Harfa"

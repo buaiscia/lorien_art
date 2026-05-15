@@ -7,6 +7,7 @@ import { HarfaPage } from './pages/HarfaPage'
 import { HennaPage } from './pages/HennaPage'
 import { KeramikaPage } from './pages/KeramikaPage'
 import { KontaktPage } from './pages/KontaktPage'
+import { NotFoundPage } from './pages/NotFoundPage'
 import { MalovaniPage } from './pages/MalovaniNaSklePage'
 import { RuznePage } from './pages/RuznePage'
 
@@ -118,7 +119,21 @@ export function App() {
         <Route path="/malovani" element={<MalovaniPage />} />
         <Route path="/ruzne" element={<RuznePage />} />
         <Route path="/kontakt" element={<KontaktPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
+
+      <footer
+        className="border-t border-stone-300/60 py-5 text-center text-sm text-stone-500"
+        style={{ background: 'antiquewhite' }}
+      >
+        <p>
+          © {new Date().getFullYear()} Lorien Art
+          {' · '}
+          <Link to="/kontakt" className="underline underline-offset-2 transition hover:text-stone-800">
+            Kontakt
+          </Link>
+        </p>
+      </footer>
     </div>
   )
 }

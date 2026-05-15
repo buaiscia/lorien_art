@@ -1,8 +1,10 @@
+import { usePageMeta } from '../hooks/usePageMeta'
 import { ContactForm } from '../components/ContactForm'
 import { PageShell } from './PageShell'
 import portraitImg from '../assets/kontakt.jpg'
 
 export function KontaktPage() {
+  usePageMeta('Kontakt | Lorien Art', 'Kontaktujte Lorien Art. Napište mi a ozvu se co nejdříve.')
   return (
     <PageShell
       eyebrow="Kontakt"
