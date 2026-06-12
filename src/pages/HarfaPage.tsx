@@ -13,6 +13,7 @@ const classical = [
   'G. F. Handel: Chaconne',
   'C. Debussy: Clair de Lune (imprese + improvizace na hlavní téma)',
   'Yiruma: River Flows in You',
+  'M. Glinka: The Lark',
 ]
 
 const filmAndPop = [
@@ -32,6 +33,8 @@ const filmAndPop = [
   'ABBA: The Winner Takes It All',
   'E. Presley: Can\'t Help Falling in Love',
   'Alphaville: Forever Young',
+  'Simon & Garfunkel - The Sound of Silence',
+  'Farewell Waltz',
 ]
 
 const folk = [
@@ -61,6 +64,7 @@ const folk = [
   'Brian Boru\'s',
   'Glenlivet',
   'D. Grant: Chrissie\'s',
+
 ]
 
 export function HarfaPage() {
@@ -72,7 +76,8 @@ export function HarfaPage() {
     <PageShell
       eyebrow="Harfa"
       title="Hudba pro vaše výjimečné okamžiky"
-      description="Zvuk harfy dokáže vytvořit kouzelnou atmosféru během vašeho svatebního dne i na dalších soukromých, firemních či kulturních akcích."
+      description="Zvuk harfy dokáže vytvořit kouzelnou atmosféru během vašeho svatebního dne, na vernisáži, oslavě i na dalších soukromých, firemních či kulturních akcích."
+      wideDescription
     >
       {/* Bio */}
       <div className="text-stone-700">

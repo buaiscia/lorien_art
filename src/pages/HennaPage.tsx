@@ -54,7 +54,7 @@ export function HennaPage() {
     <PageShell
       eyebrow="Henna"
       title="Malování hennou"
-      description="S hennou jsem se poprvé setkala, když mi bylo 16 (už je to dlouhá doba :)). Od prvního okamžiku mi učarovala její vůně a chladivý dotek na kůži. Od té doby vlastně hennou maluji pořád, i když spíše příležitostně. Jednou za rok hennou zdobím ruce i návštěvníky řemeslného festivalu v jihomoravském Borotíně. Málokdy mám čas něco vyfotit, tak tady je jen malá ukázka. Inspiruji se hlavně přírodními motivy. Dětské ručky jsou potom na přání. Děti mají většinou přesnou představu o tom, jak chtějí mít ručky ozdobené. Ráda ozdobím i vaše ruce, nohy nebo těhotenská bříška. Henna je také skvělá na teambuilding, oslavy a rozlučky se svobodou."
+      description="S hennou jsem se poprvé setkala, když mi bylo 16 (už je to dlouhá doba :)). Od prvního okamžiku mě nadchla její vůně a chladivý dotek na kůži. Od té doby vlastně hennou maluji pořád, i když spíše příležitostně. Jednou za rok hennou zdobím i návštěvníky řemeslného festivalu v jihomoravském Borotíně. Na focení při malování moc nemyslím, tak tady je jen malá ukázka mojí práce. Inspiruji se hlavně přírodními motivy. Dětské ručky jsou potom na přání. Děti mají většinou přesnou představu o tom, co chtějí namalovat. Ráda ozdobím i vaše ruce, nohy nebo těhotenská bříška. Henna je také skvělá na teambuilding, oslavy a rozlučky se svobodou."
       wideDescription
     >
       {/* Masonry grid */}

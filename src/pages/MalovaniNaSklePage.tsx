@@ -51,7 +51,7 @@ export function MalovaniPage() {
     <PageShell
       eyebrow="Malování"
       title="Ručně malované sklo, svíčky a další předměty."
-      description="Ozdobit se dá (skoro) všechno. Skleněné dózy na potraviny nebo na koření, svíčky...fantazii se meze nekladou. Věnuji se i pyrografice. V budoucnu plánuji nabízet i tyto zkrášlené věci na prodej (i na zakázku). Vše je ale stále v procesu (stejně jako tyto stránky), tak zatím alespoň sdílím pár obrázků pro představu a pro radost."
+      description="Ručně malované sklo, svíčky a další. Ozdobit se dá (skoro) všechno. Skleněné dózy na potraviny nebo na koření, svíčky...fantazii se meze nekladou. Na svíčky maluji barvami na bázi přírodního vosku, takže se nemusíte bát je používat. Věnuji se i akvarelové malbě a pyrografice. V budoucnu plánuji nabízet i tyto zkrášlené věci na prodej (i na zakázku). Vše je ale stále v procesu (stejně jako tyto stránky), tak zatím alespoň sdílím pár obrázků pro představu a pro radost."
       wideDescription
     >
       {/* Masonry grid */}

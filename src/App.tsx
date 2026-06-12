@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
-import logoImg from './assets/logo.png'
+import logoImg from './assets/logo_2.png'
 
 import { HomePage } from './pages/HomePage'
 import { HarfaPage } from './pages/HarfaPage'
@@ -9,6 +9,7 @@ import { KeramikaPage } from './pages/KeramikaPage'
 import { KontaktPage } from './pages/KontaktPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { MalovaniPage } from './pages/MalovaniNaSklePage'
+import { OmnePage } from './pages/OmnePage'
 import { RuznePage } from './pages/RuznePage'
 
 const navigationItems = [
@@ -18,6 +19,7 @@ const navigationItems = [
   { to: '/henna', label: 'Henna', end: false },
   { to: '/malovani', label: 'Malování', end: false },
   { to: '/ruzne', label: 'Různé', end: false },
+  { to: '/o-mne', label: 'O mně', end: false },
   { to: '/kontakt', label: 'Kontakt', end: false },
 ] as const
 
@@ -118,6 +120,7 @@ export function App() {
         <Route path="/henna" element={<HennaPage />} />
         <Route path="/malovani" element={<MalovaniPage />} />
         <Route path="/ruzne" element={<RuznePage />} />
+        <Route path="/o-mne" element={<OmnePage />} />
         <Route path="/kontakt" element={<KontaktPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
@@ -128,6 +131,8 @@ export function App() {
       >
         <p>
           © {new Date().getFullYear()} Lorien Art
+          {' · '}
+          Romana Buaiscia
           {' · '}
           <Link to="/kontakt" className="underline underline-offset-2 transition hover:text-stone-800">
             Kontakt

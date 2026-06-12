@@ -56,6 +56,7 @@ export function KeramikaPage() {
       eyebrow="Keramika"
       title="Ručně vyráběná autorská keramika"
       description="Pokud nemám zrovna ruce na strunách harfy, hraju si s hlínou. Do budoucna plánuji své výrobky nabízet k prodeji, ale v tuto chvíli teprve pomaličku vybavuji svou malou domácí dílnu. Vše je zatím v procesu, stejně jako tyto stránky. Zatím je tady alespoň malá ukázka mé tvorby."
+      wideDescription
     >
       {/* Masonry grid */}
       <div className="columns-2 gap-3 sm:columns-3 lg:columns-4">
