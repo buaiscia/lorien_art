@@ -14,10 +14,16 @@ import img9 from '../assets/ceramics/keramika_9.jpg'
 import img10 from '../assets/ceramics/keramika_10.jpg'
 import img11 from '../assets/ceramics/keramika_11.jpg'
 import img12 from '../assets/ceramics/keramika_12.jpg'
+import img13 from '../assets/ceramics/keramika_13.jpg'
+import img14 from '../assets/ceramics/keramika_14.jpg'
+import img15 from '../assets/ceramics/keramika_15.jpg'
+import img16 from '../assets/ceramics/keramika_16.jpg'
+import img17 from '../assets/ceramics/keramika_17.jpg'
 
 const images = [
   img1, img2, img3, img4, img5, img6,
   img7, img8, img9, img10, img11, img12,
+  img13, img14, img15, img16, img17
 ]
 
 export function KeramikaPage() {

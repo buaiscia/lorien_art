@@ -17,8 +17,15 @@ import img12 from '../assets/henna/henna_12.jpg'
 import img13 from '../assets/henna/henna_13.jpg'
 import img14 from '../assets/henna/henna_14.jpg'
 import img15 from '../assets/henna/henna_15.jpg'
+import img16 from '../assets/henna/henna_16.jpg'
+import img17 from '../assets/henna/henna_17.jpg'
+import img18 from '../assets/henna/henna_18.jpg'
+import img19 from '../assets/henna/henna_19.jpg'
+import img20 from '../assets/henna/henna_20.jpg'
+import img21 from '../assets/henna/henna_21.jpg'
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15]
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9,
+  img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21]
 
 export function HennaPage() {
   usePageMeta('Henna | Lorien Art', 'Malování hennou – přírodní motivy, těhotenská bříška, teambuilding a oslavy.')
